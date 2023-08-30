@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230830182701">
+    <title>Weather App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="_container">
+                <div class="header-body">
+                    <h3 tabindex="1" aria-label="моё небольшое погодное приложение" class="header-body__name">My
+                        mini
+                        weather app
+                    </h3>
+                    <form tabindex="2" aria-label="поиск search" class="header-body__form" action="#">
+                        <input class="header-body__search not-used" type="search">
+                        <button class="header-body__button" type="submit">
+                            <svg class="header-body__magnifier" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d=" M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938
+                                37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L
+                                33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21
+                                3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C
+                                12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="main main-indent">
+            <video class="background-video" preload="auto" muted autoplay loop src="#"></video>
+            <div class="_container">
+                <section class="basic-data basic-data-indent">
+                    <ul class="basic-data__box">
+                        <li>
+                            <h3 tabindex="3" class="basic-data__place">#</h3>
+                        </li>
+                        <li class="basic-data__temp">
+                            <picture><source srcset="#" type="image/webp"><img class="basic-data__icon" src="#" alt="weather icon"></picture>
+                            <h2 tabindex="4" class="basic-data__title"><span class="circle main-circle">#</span></h2>
+                            <div class="basic-data__switches">
+                                <button tabindex="5"
+                                    aria-label="переключение на градусы по цельсию switching to degrees celsius"
+                                    class="basic-data__button basic-data__button-c active" type="button">C</button>
+                                <button tabindex="6"
+                                    aria-label="переключение на градусы по фаренгейту switching to degrees fahrenheit"
+                                    class="basic-data__button basic-data__button-f" type="button">F</button>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 tabindex="7" class="basic-data__description">#</h3>
+                        </li>
+                        <li>
+                            <h5 tabindex="8" class="basic-data__time">
+                                #
+                            </h5>
+                        </li>
+                        <li>
+                            <ol class="basic-data__other-details other-details">
+                                <li class="other-details__feels">
+                                    <span tabindex="9" class="other-details__feels-text"></span>
+                                    <span tabindex="10" class="other-details__feels-number circle"></span>
+                                </li>
+                                <li tabindex="11" class="other-details__wind"></li>
+                                <li tabindex="12" class="other-details__visibility"></li>
+                                <li tabindex="13" class="other-details__precip"></li>
+                                <li tabindex="14" class="other-details__humidity"></li>
+                                <li tabindex="15" class="other-details__pressure"></li>
+                            </ol>
+                        </li>
+                    </ul>
+
+
+                </section>
+                <section class="daily daily-indent">
+                    <h2 tabindex="16" class="daily__title">#</h2>
+                    <ul class="daily__box">
+                        <li tabindex="17"
+                            aria-label="карточка прогноза погоды, можно открыть weather forecast card, can be opened"
+                            class="daily__item">
+                            <h4 tabindex="18" class="daily__day">#</h4>
+                            <div class="daily__additionally">
+                                <h4 tabindex="19" class="daily__humidity">#</h4>
+                                <h4 tabindex="20" class="daily__vis">#</h4>
+                                <h4 tabindex="21" class="daily__chance-of-rain">#</h4>
+                                <h4 tabindex="22" class="daily__chance-of-snow">#</h4>
+                                <h4 tabindex="23" class="daily__maxwind">#</h4>
+                            </div>
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
+                            <h3 class="daily__temp">
+                                <span tabindex="24" class="daily__temp-desc">#</span>
+                                <span tabindex="25" class="circle daily__temp-temp">#</span>
+                            </h3>
+                            <h3 tabindex="25" class="daily__desc">#</h3>
+                        </li>
+                        <li tabindex="26"
+                            aria-label="карточка прогноза погоды, можно открыть weather forecast card, can be opened"
+                            class="daily__item">
+                            <h4 tabindex="27" class="daily__day">#</h4>
+                            <div class="daily__additionally">
+                                <h4 tabindex="29" class="daily__humidity">#</h4>
+                                <h4 tabindex="30" class="daily__vis">#</h4>
+                                <h4 tabindex="31" class="daily__chance-of-rain">#</h4>
+                                <h4 tabindex="32" class="daily__chance-of-snow">#</h4>
+                                <h4 tabindex="33" class="daily__maxwind">#</h4>
+                            </div>
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
+                            <h3 class="daily__temp">
+                                <span tabindex="34" class="daily__temp-desc">#</span>
+                                <span tabindex="35" class="circle daily__temp-temp">#</span>
+                            </h3>
+                            <h3 tabindex="36" class="daily__desc">#</h3>
+                        </li>
+                        <li tabindex="37"
+                            aria-label="карточка прогноза погоды, можно открыть weather forecast card, can be opened"
+                            class="daily__item">
+                            <h4 tabindex="38" class="daily__day">#</h4>
+                            <div class="daily__additionally">
+                                <h4 tabindex="40" class="daily__humidity">#</h4>
+                                <h4 tabindex="41" class="daily__vis">#</h4>
+                                <h4 tabindex="42" class="daily__chance-of-rain">#</h4>
+                                <h4 tabindex="43" class="daily__chance-of-snow">#</h4>
+                                <h4 tabindex="44" class="daily__maxwind">#</h4>
+                            </div>
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
+                            <h3 class="daily__temp">
+                                <span tabindex="45" class="daily__temp-desc">#</span>
+                                <span tabindex="46" class="circle daily__temp-temp">#</span>
+                            </h3>
+                            <h3 tabindex="47" class="daily__desc">#</h3>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="_container">
+                <h5 class="footer__text">
+                    <span tabindex="48" class="footer__from"></span>
+                    <a tabindex="49" target="blank" href="https://www.weatherapi.com">weatherapi.com</a>
+                </h5>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/app.min.js?_v=20230830182701"></script>
+</body>
+
+</html>
