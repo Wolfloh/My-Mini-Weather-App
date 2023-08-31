@@ -41,7 +41,7 @@ function makeRequest(weatherURL) {
         .then(data => {
             console.log(data);
             for (let i = 0; i < data.forecast.forecastday.length; i++) {
-                $dailyIcons[i].setAttribute('src', `https:${data.forecast.forecastday[i].day.condition.icon}`);
+                $dailyIcons[i].setAttribute('src', `http:${data.forecast.forecastday[i].day.condition.icon}`);
                 $dailyAvTemp[i].innerHTML = data.forecast.forecastday[i].day.avgtemp_c;
                 if (/[\u0400-\u04FF]/.test(data.location.country)) {
                     switch (data.forecast.forecastday[i].day.condition.code) {
@@ -544,7 +544,7 @@ function makeRequest(weatherURL) {
             $feelsLike.innerHTML = data.current.feelslike_c;
             $place.innerHTML = `${data.location.name}, ${data.location.country}`;
             $temp.innerHTML = `<span class="circle main-circle">${data.current.temp_c}</span>`;
-            $icon.setAttribute('src', `https:${data.current.condition.icon}`);
+            $icon.setAttribute('src', `http:${data.current.condition.icon}`);
             $day[2].innerHTML = data.forecast.forecastday[2].date.slice(5);
             $buttons.forEach(i => {
                 i.addEventListener('click', (e) => {
