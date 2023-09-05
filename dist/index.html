@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230831210400">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230905192840">
     <title>Weather App</title>
     <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
@@ -25,7 +25,7 @@
                         mini
                         weather app
                     </h3>
-                    <form tabindex="2" aria-label="поиск search" class="header-body__form" action="#">
+                    <div tabindex="2" aria-label="поиск search" class="header-body__form">
                         <input class="header-body__search not-used" type="search">
                         <button class="header-body__button" type="submit">
                             <svg class="header-body__magnifier" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -36,7 +36,7 @@
                                 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z" />
                             </svg>
                         </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </header>
@@ -49,7 +49,7 @@
                             <h3 tabindex="3" class="basic-data__place">#</h3>
                         </li>
                         <li class="basic-data__temp">
-                            <img class="basic-data__icon" src="#" alt="weather icon">
+                            <picture><source srcset="#" type="image/webp"><img class="basic-data__icon" src="#" alt="weather icon"></picture>
                             <h2 tabindex="4" class="basic-data__title"><span class="circle main-circle">#</span></h2>
                             <div class="basic-data__switches">
                                 <button tabindex="5"
@@ -99,7 +99,7 @@
                                 <h4 tabindex="22" class="daily__chance-of-snow">#</h4>
                                 <h4 tabindex="23" class="daily__maxwind">#</h4>
                             </div>
-                            <img src="#" alt="daily-icon" class="daily__icon">
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
                             <h3 class="daily__temp">
                                 <span tabindex="24" class="daily__temp-desc">#</span>
                                 <span tabindex="25" class="circle daily__temp-temp">#</span>
@@ -117,7 +117,7 @@
                                 <h4 tabindex="32" class="daily__chance-of-snow">#</h4>
                                 <h4 tabindex="33" class="daily__maxwind">#</h4>
                             </div>
-                            <img src="#" alt="daily-icon" class="daily__icon">
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
                             <h3 class="daily__temp">
                                 <span tabindex="34" class="daily__temp-desc">#</span>
                                 <span tabindex="35" class="circle daily__temp-temp">#</span>
@@ -135,7 +135,7 @@
                                 <h4 tabindex="43" class="daily__chance-of-snow">#</h4>
                                 <h4 tabindex="44" class="daily__maxwind">#</h4>
                             </div>
-                            <img src="#" alt="daily-icon" class="daily__icon">
+                            <picture><source srcset="#" type="image/webp"><img src="#" alt="daily-icon" class="daily__icon"></picture>
                             <h3 class="daily__temp">
                                 <span tabindex="45" class="daily__temp-desc">#</span>
                                 <span tabindex="46" class="circle daily__temp-temp">#</span>
@@ -157,7 +157,7 @@
     </div>
 
 
-    <script src="js/app.min.js?_v=20230831210400"></script>
+    <script src="js/app.min.js?_v=20230905192840"></script>
 </body>
 
 </html>
